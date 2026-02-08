@@ -14,9 +14,11 @@
     app.use(helmet()); //security middleware that helps protect your app by setting various HTTP headers
     app.use(morgan('dev')); //HTTP request logger middleware for node.js
 
-    
-    app.use("/api/products", productRoute);
 
+    app.use("/api/products", productRoute);
+    app.get("/", (req, res) => {
+        res.send("Welcome to the E-commerce API");
+    });
  
 
 
