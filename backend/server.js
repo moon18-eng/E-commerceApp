@@ -5,6 +5,8 @@
     import dotenv from 'dotenv';
     import productRoute from './routes/productRoute.js';
     import { sql } from "./config/db.js";
+    import { aj } from "./lib/arcjet.js";
+
 
 
     dotenv.config();
